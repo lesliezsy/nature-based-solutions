@@ -6,6 +6,8 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { signInWithGitHub, signOut, user } = useAuth();
 
+  console.log("User in Navbar:", user);
+
   const displayName = user?.user_metadata.user_name || user?.email;
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
@@ -65,7 +67,7 @@ export const Navbar = () => {
             ) : (
               <button
                 onClick={signInWithGitHub}
-                className="bg-blue-500 px-3 py-1 rounded"
+                className="bg-cyan-800 px-3 py-1 rounded"
               >
                 Sign in with GitHub
               </button>
