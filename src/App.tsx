@@ -7,6 +7,8 @@ import { PostPage } from "./pages/PostPage";
 import { CreateCategoryPage } from "./pages/CreateCategoryPage";
 import { CategoriesPage } from "./pages/CategoriesPage";
 import { CategoryPage } from "./pages/CategoryPage";
+import { MapPage } from "./pages/MapPage";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/category/create" element={<CreateCategoryPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/category/:id" element={<CategoryPage />} />
+          <Route path="/map" element={<MapPage />} />
         </Routes>
       </div>
     </div>
