@@ -62,4 +62,4 @@ A modern React web application for publishing and browsing posts about nature-ba
 - `build` - Build for production
 - `preview` - Preview production build
 
->>>>>>> ad6ad65034b4b797a7f7cbffa6630bc248d5b15c
+
